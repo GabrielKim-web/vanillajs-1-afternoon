@@ -8,11 +8,18 @@
   </head>
 <body>
   <header><h1>Poker Cards</h1></header>
-    <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
+    <main id>
+        <section id = "diamonds"><span>A</span><span>♦</span><span>A</span></section>
+        <section id = "clubs"><span>A</span><span>♣</span><span>A</span></section>
+        <section id = "hearts"><span>A</span><span>♥</span><span>A</span></section>
+        <section id = "spades"><span>A</span><span>♠</span><span>A</span></section>
     </main>
+    <input id="idInput" type="text" placeholder="Set ID (no caps)">
+    <input id="colorInput" type="text" placeholder="Set Color (no caps)"></br>
+    <button id="setCard" onclick ="setCard()">Set Card</button>
+
+    <!-- Black Diamond -->
+    <button id="reset" onclick ="reset()">Reset Attributes</button>
+    <script src="./index.js"></script>
 </body>
 </html>
