@@ -26,12 +26,18 @@ function setCard() {
 
 function reset() {
     //There's gotta be an easier way to do this.
-    let reset = document.getElementById("diamonds")
-    reset.style.color = "grey";
-    reset = document.getElementById("clubs")
-    reset.style.color = "grey";
-    reset = document.getElementById("hearts")
-    reset.style.color = "grey";
-    reset = document.getElementById("spades")
-    reset.style.color = "grey";
+    // let reset = document.getElementById("diamonds")
+    // reset.style.color = "grey";
+    // reset = document.getElementById("clubs")
+    // reset.style.color = "grey";
+    // reset = document.getElementById("hearts")
+    // reset.style.color = "grey";
+    // reset = document.getElementById("spades")
+    // reset.style.color = "grey";
+
+    let reset = document.getElementsByTagName("section");
+    //rather than being dry, for loop them all!
+    for (i = 0; i < reset.length; i++) {
+        reset[i].style.color = "grey";
+    }
 }
